@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #fff3d7;
+        }
+        .box {
+            width: 450px;
+            height: 450px;
+            overflow: hidden;
+
+        /*//phan nao thua ra khoi khung thi cat di*/
+            -webkit-box-shadow: 53px 48px 55px 0px rgba(52,121,133,1);
+            -moz-box-shadow: 53px 48px 55px 0px rgba(52,121,133,1);
+            box-shadow: 53px 48px 55px 0px rgba(52,121,133,1);
+
+            border-radius: 138px 0px 138px 0px;
+            -moz-border-radius: 138px 0px 138px 0px;
+            -webkit-border-radius: 138px 0px 138px 0px;
+            border: 20px solid #6481a1;
+
+            perspective: 1000px;
+        /*    tao do saau*/
+
+            /*animation-name: hinhAnh;*/
+            /*animation-duration: 4s;*/
+            /*animation-iteration-count: infinite;*/
+
+
+        }
+        .box img{
+            height: 450px;
+            transform: translateX(-55%);
+            /*lùi ảnh 50% chiều rộng ảnh sang bên trái*/
+            margin-left: 50%;
+        /* lùi ảnh 50% chiều rộng của box*/
+
+        }
+        * {
+            font-family: 'Amatic SC', cursive;
+            font-size: 50px;
+        }
+        .text {
+            z-index: 10;
+        }
+        .box:hover  {
+            transform: scale(1.2);
+            /* di chuot vao anh thi to len 1.2*/
+            transition: 3s;
+        /*    toc do to len 0.4 s*/
+        /*    transform: rotate3d(90,90,90,360deg);*/
+
+
+        }
+
+        @keyframes hinhAnh{
+            /*0%{*/
+            /*    transform: rotate3d(0);*/
+            /*}*/
+            /*20%{*/
+            /*    transform: rotateY(60deg);*/
+            /*}*/
+            /*40%{*/
+            /*    transform: rotateY(90deg);*/
+            /*}*/
+            /*60%{*/
+            /*    transform: rotateY(180deg);*/
+            /*}*/
+            /*80%{*/
+            /*    transform: rotateY(270deg);*/
+            /*}*/
+            /*100%{*/
+            /*    transform: rotateY(360deg);*/
+            /*!*}*!*/
+            /*0%{*/
+            /*    transform: rotate3d(90,90,90,0deg);*/
+            /*}*/
+            /*8%{*/
+            /*    transform: rotate3d(90,90,90,30deg);*/
+            /*}*/
+            /*17%{*/
+            /*    transform: rotate3d(90,90,90,60deg);*/
+            /*}*/
+            /*25%{*/
+            /*    transform: rotate3d(90,90,90,90deg);*/
+            /*}*/
+            /*34%{*/
+            /*    transform: rotate3d(90,90,90,120deg);*/
+            /*}*/
+            /*42%{*/
+            /*    transform: rotate3d(90,90,90,150deg);*/
+            /*}*/
+            /*51%{*/
+            /*    transform: rotate3d(90,90,90,180deg);*/
+            /*}*/
+            /*59%{*/
+            /*    transform: rotate3d(90,90,90,210deg);*/
+            /*}*/
+            /*67%{*/
+            /*    transform: rotate3d(90,90,90,240deg);*/
+            /*}*/
+            /*75%{*/
+            /*    transform: rotate3d(90,90,90,270deg);*/
+            /*}*/
+            /*83%{*/
+            /*    transform: rotate3d(90,90,90,300deg);*/
+            /*}*/
+            /*91%{*/
+            /*    transform: rotate3d(90,90,90,330deg);*/
+            /*}*/
+            /*100%{*/
+            /*    transform: rotate3d(90,90,90,360deg);*/
+            /*}*/
+
+
+            /*    transform: scale(1.2);*/
+            /*    !* di chuot vao anh thi to len 1.2*!*/
+            /*    transition: 3s;*/
+            /*!*    toc do to len 0.4 s*!*/
+            /*    transform: rotate3d(90,90,90,360deg);*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+<center>
+    <div class="box">
+        <img src="img/hvi.jpg" alt=""/>
+
+    </div>
+    <div class="text">
+        <h1> <br>HOANGFVI <br>
+            Trịnh Lan Hương</h1>
+        <h2>
+            xinh qaa'
+        </h2>
+    </div>
+
+</center>
+</body>
+</html>

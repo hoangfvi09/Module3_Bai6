@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F5F5F5;
+        }
+
+        .images-selector input {
+            position: absolute;
+            z-index: 10;
+        }
+
+        .images-selector input:checked + .img-card {
+            filter: none;
+            transform: scaleY(1);
+        }
+
+        .img-card {
+            display: inline-block;
+            width: 250px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: all 200ms ease-in;
+            filter: grayscale(1) opacity(.8);
+        }
+
+        .img-card:hover {
+            filter: grayscale(0) opacity(1);
+            /*   box-shadow:  0px 8px 4px rgba(0, 0, 0, 0.3),
+                           0px 10px 2px rgba(0, 0, 0, 0.1); */
+        }
+
+        .img-card::before,
+        .img-card::after {
+            transform: scaleY(-1);
+        }
+
+        /*reflection*/
+        .img-card:hover::after {
+            content: '';
+            background-image: inherit;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            width: inherit;
+            height: 40%;
+            position: absolute;
+            bottom: -25%;
+        }
+
+        /*fade reflection*/
+        .img-card:hover::before {
+            content: '';
+            width: inherit;
+            height: 42%;
+            position: absolute;
+            bottom: -25%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .9),rgba(255, 255, 255, .5));
+            z-index: 1;
+        }
+
+        .img1 {
+            background-image: url(img/hvi1.jpg);
+        }
+
+        .img2 {
+            background-image: url(img/hvi2.jpg);
+        }
+
+        .img3 {
+            background-image: url(img/hvi3.jpg);
+        }
+
+        .img4 {
+            background-image: url(img/hvi4.jpg);
+        }
+        .text {
+            font-family: 'Amatic SC', cursive;
+            font-size: 25px;
+            color: #466950;
+        }
+        </style>
+</head>
+<body>
+<div class="images-selector">
+    <input type="radio" id="duck" name="image" value="duck">
+    <label for="duck" class="img-card img1"></label>
+    <input type="radio" id="dog" name="image" value="dog">
+    <label for="dog" class="img-card img2"></label>
+    <input type="radio" id="cat" name="image" value="cat">
+    <label for="cat" class="img-card img3"></label>
+    <input type="radio" id="cow" name="image" value="cow">
+    <label for="cow" class="img-card img4"></label>
+    <center>
+    <div class="text">
+        <h1>
+            HOANGFVI
+            <br>
+            xinh qaaaa ikkk
+        </h1>
+    </div>
+    </center>
+
+</div>
+</body>
+</html>
